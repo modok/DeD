@@ -119,6 +119,29 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AppJs\DeDSheets\app\controllers\c.mainCtrl.js" />
+    <Content Include="AppJs\DeDSheets\app\dedSheets.js">
+      <DependentUpon>dedSheets.js.bundle</DependentUpon>
+    </Content>
+    <Content Include="AppJs\DeDSheets\app\dedSheets.min.js">
+      <DependentUpon>dedSheets.js</DependentUpon>
+    </Content>
+    <Content Include="AppJs\DeDSheets\app\directives\attacksSpellcastingDirective.js" />
+    <Content Include="AppJs\DeDSheets\app\directives\equipmentDirective.js" />
+    <Content Include="AppJs\DeDSheets\app\directives\otherProfixDirective.js" />
+    <Content Include="AppJs\DeDSheets\app\directives\sheetsDirective.js" />
+    <Content Include="AppJs\DeDSheets\app\directives\statisticsAndProfixDirective.js" />
+    <Content Include="AppJs\DeDSheets\app\directives\statusHealthDirective.js" />
+    <Content Include="AppJs\DeDSheets\app\directives\traitsDirective.js" />
+    <Content Include="AppJs\DeDSheets\app\modules.js" />
+    <Content Include="AppJs\DeDSheets\app\run.js" />
+    <Content Include="AppJs\DeDSheets\app\views\directives\equipmentDirective.html" />
+    <Content Include="AppJs\DeDSheets\app\views\directives\otherProfixDirective.html" />
+    <Content Include="AppJs\DeDSheets\app\views\directives\sheetsDirective.html" />
+    <Content Include="AppJs\DeDSheets\app\views\directives\statisticsAndProfixDirective.html" />
+    <Content Include="AppJs\DeDSheets\app\views\directives\statusHealthDirective.html" />
+    <Content Include="AppJs\DeDSheets\app\views\directives\attacksSpellcastingDirective.html" />
+    <Content Include="AppJs\DeDSheets\app\views\directives\traitsDirective.html" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -146,6 +169,11 @@
     <Content Include="Scripts\angular-sanitize.min.js.map" />
     <Content Include="Scripts\angular-resource.min.js.map" />
     <Content Include="Scripts\angular-touch.min.js.map" />
+    <Content Include="AppJs\DeDSheets\app\dedSheets.js.bundle" />
+    <Content Include="AppJs\DeDSheets\app\dedSheets.min.js.map">
+      <DependentUpon>dedSheets.min.js</DependentUpon>
+    </Content>
+    <Content Include="Content\dedSheets\dedSheets.scss" />
     <None Include="Scripts\jquery-2.1.1.intellisense.js" />
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\bootstrap.js" />
