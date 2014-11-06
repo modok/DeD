@@ -131,7 +131,8 @@
     <Content Include="AppJs\DeDSheets\app\directives\equipmentDirective.js" />
     <Content Include="AppJs\DeDSheets\app\directives\otherProfixDirective.js" />
     <Content Include="AppJs\DeDSheets\app\directives\sheetsDirective.js" />
-    <Content Include="AppJs\DeDSheets\app\directives\statisticsAndProfixDirective.js" />
+    <Content Include="AppJs\DeDSheets\app\directives\profixDirective.js" />
+    <Content Include="AppJs\DeDSheets\app\directives\statisticsDirective.js" />
     <Content Include="AppJs\DeDSheets\app\directives\statusHealthDirective.js" />
     <Content Include="AppJs\DeDSheets\app\directives\traitsDirective.js" />
     <Content Include="AppJs\DeDSheets\app\modules.js" />
@@ -141,8 +142,9 @@
     <Content Include="AppJs\DeDSheets\app\views\directives\columnDirective.html" />
     <Content Include="AppJs\DeDSheets\app\views\directives\equipmentDirective.html" />
     <Content Include="AppJs\DeDSheets\app\views\directives\otherProfixDirective.html" />
+    <Content Include="AppJs\DeDSheets\app\views\directives\profixDirective.html" />
     <Content Include="AppJs\DeDSheets\app\views\directives\sheetsDirective.html" />
-    <Content Include="AppJs\DeDSheets\app\views\directives\statisticsAndProfixDirective.html" />
+    <Content Include="AppJs\DeDSheets\app\views\directives\statisticsDirective.html" />
     <Content Include="AppJs\DeDSheets\app\views\directives\statusHealthDirective.html" />
     <Content Include="AppJs\DeDSheets\app\views\directives\attacksSpellcastingDirective.html" />
     <Content Include="AppJs\DeDSheets\app\views\directives\traitsDirective.html" />

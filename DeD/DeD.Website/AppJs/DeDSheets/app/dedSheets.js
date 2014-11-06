@@ -164,9 +164,28 @@ angular.module('DeDSheets.directives')
 
 	}
 }]);
-///#source 1 1 /AppJs/DeDSheets/app/directives/statisticsAndProfixDirective.js
+///#source 1 1 /AppJs/DeDSheets/app/directives/statisticsDirective.js
 angular.module('DeDSheets.directives')
-.directive('statisticsAndProfix', ['statsService'
+.directive('statistics', ['statsService'
+	, function (statsService) {
+	return {
+		restrict: 'E',
+		replace: true,
+		scope: {
+			stats: '=',
+		},
+		templateUrl: '/AppJs/DeDSheets/app/views/directives/statisticsDirective.html',
+		link: function(scope) {
+			scope.bonusByValue = function(value) {
+				return statsService.bonusByValue(value);
+			};
+		}
+
+	};
+}]);
+///#source 1 1 /AppJs/DeDSheets/app/directives/profixDirective.js
+angular.module('DeDSheets.directives')
+.directive('profix', ['statsService'
 	, function (statsService) {
 	return {
 		restrict: 'E',
@@ -175,11 +194,8 @@ angular.module('DeDSheets.directives')
 			stats: '=',
 			profix: '='
 		},
-		templateUrl: '/AppJs/DeDSheets/app/views/directives/statisticsAndProfixDirective.html',
+		templateUrl: '/AppJs/DeDSheets/app/views/directives/profixDirective.html',
 		link: function(scope) {
-			scope.bonusByValue = function(value) {
-				return statsService.bonusByValue(value);
-			};
 			scope.bonusByStat = function(code, stats) {
 				return statsService.bonusByStat(code, stats);
 			};

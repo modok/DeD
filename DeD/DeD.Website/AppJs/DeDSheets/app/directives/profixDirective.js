@@ -1,5 +1,5 @@
 ﻿angular.module('DeDSheets.directives')
-.directive('statisticsAndProfix', ['statsService'
+.directive('profix', ['statsService'
 	, function (statsService) {
 	return {
 		restrict: 'E',
@@ -8,11 +8,8 @@
 			stats: '=',
 			profix: '='
 		},
-		templateUrl: '/AppJs/DeDSheets/app/views/directives/statisticsAndProfixDirective.html',
+		templateUrl: '/AppJs/DeDSheets/app/views/directives/profixDirective.html',
 		link: function(scope) {
-			scope.bonusByValue = function(value) {
-				return statsService.bonusByValue(value);
-			};
 			scope.bonusByStat = function(code, stats) {
 				return statsService.bonusByStat(code, stats);
 			};
