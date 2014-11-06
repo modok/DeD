@@ -1,3 +1,25 @@
 ﻿<div class="statistics-and-profix">
-	
+	<table>
+		<tr>
+			<th class="col-md-4">Name</th>
+			<th class="col-md-4">Value</th>
+			<th class="col-md-4">Bonus</th>
+		</tr>
+		<tr data-ng-repeat="stat in stats track by $index">
+			<td class="col-md-4">{{stat.name}}</td>
+			<td class="col-md-4">{{stat.value}}</td>
+			<td class="col-md-4">{{bonusByValue(stat.value)}}</td>
+		</tr>
+	</table>
+	<hr />	
+	<table>
+		<tr>
+			<th class="col-md-4">Name</th>
+			<th class="col-md-4">Bonus</th>
+		</tr>
+		<tr data-ng-repeat="p in profix track by $index">
+			<td class="col-md-4">{{p.name}} <small>({{p.based}})</small></td>
+			<td class="col-md-4">{{bonusByStat(p.based, stats)}}</td>
+		</tr>
+	</table>
 </div>

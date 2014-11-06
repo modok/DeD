@@ -1,0 +1,17 @@
+﻿.sheets header {
+  min-height: 100px;
+  margin: 10px 0;
+  padding: 0;
+  background: #efefef; }
+.sheets .column {
+  padding: 0; }
+  .sheets .column hr {
+    background: #fff;
+    height: 6px; }
+  .sheets .column .inner {
+    background: #efefef;
+    margin: 6px;
+    padding: 20px 0;
+    min-height: 100px; }
+
+/*# sourceMappingURL=dedSheets.css.map */

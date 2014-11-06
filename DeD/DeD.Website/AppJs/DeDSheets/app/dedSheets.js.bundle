@@ -13,12 +13,14 @@
     <file>/AppJs/DeDSheets/app/modules.js</file>
 		<file>/AppJs/DeDSheets/app/controllers/c.mainCtrl.js</file>
     <file>/AppJs/DeDSheets/app/directives/attacksSpellcastingDirective.js</file>
-    <file>/AppJs/DeDSheets/app/directives/otherProfixDirective.js</file>
+		<file>/AppJs/DeDSheets/app/directives/columnDirective.js</file>
+		<file>/AppJs/DeDSheets/app/directives/otherProfixDirective.js</file>
     <file>/AppJs/DeDSheets/app/directives/equipmentDirective.js</file>
     <file>/AppJs/DeDSheets/app/directives/sheetsDirective.js</file>
     <file>/AppJs/DeDSheets/app/directives/statisticsAndProfixDirective.js</file>
     <file>/AppJs/DeDSheets/app/directives/statusHealthDirective.js</file>
     <file>/AppJs/DeDSheets/app/directives/traitsDirective.js</file>
+		<file>/AppJs/DeDSheets/app/services/statsService.js</file>
     <file>/AppJs/DeDSheets/app/run.js</file>
   </files>
 </bundle>

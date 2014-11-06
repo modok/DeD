@@ -4,35 +4,34 @@
 <div></div>
 <div class="DeD row" data-ng-app="DeDSheets" data-ng-controller="mainCtrl">
 	<sheets char-class="char.charClass"
+					char-name="char.charName"
 	        level="char.level"
 	        race="char.race"
 	        player-name="char.playerName"
 	        experience="char.experience">
-		<div class="row">
-			<div class="col-md-4">
+			<column>
 				<statistics-and-profix stats="char.stats"
-				                       profix="char.profix"></statistics-and-profix>
+															 profix="char.profix"></statistics-and-profix>
 
 				<other-profix profix="char.otherProfix"></other-profix>
 
-			</div>
-			<div class="col-md-4">
+			</column>
+			<column>
 				<status-health armor-class="char.status.ac"
-				               initiative="char.status.init"
-				               speed="char.status.speed"
-				               current-hp="char.status.currentHp"
-				               max-hp="char.status.maxHp"
-				               temp-hp="char.status.tempHp"></status-health>
+											 initiative="char.status.init"
+											 speed="char.status.speed"
+											 current-hp="char.status.currentHp"
+											 max-hp="char.status.maxHp"
+											 temp-hp="char.status.tempHp"></status-health>
 
 				<attacks-spellcasting attacks="char.attacks"
-				                      spells="char.spells"></attacks-spellcasting>
+															spells="char.spells"></attacks-spellcasting>
 
 				<equipment objects="char.equipment"></equipment>
+			</column>
 
-			</div>
-			<div class="col-md-4">
+			<column>
 				<traits traits="char.traits"></traits>
-			</div>
-		</div>
+			</column>
 	</sheets>
 </div>

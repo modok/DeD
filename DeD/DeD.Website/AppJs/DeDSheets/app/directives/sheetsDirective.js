@@ -5,6 +5,7 @@
 		replace: true,
 		transclude: true,
 		scope: {
+			charName: '=',
 			charClass: '=',
 			level: '=',
 			race: '=',

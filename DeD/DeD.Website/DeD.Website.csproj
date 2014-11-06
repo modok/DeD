@@ -127,6 +127,7 @@
       <DependentUpon>dedSheets.js</DependentUpon>
     </Content>
     <Content Include="AppJs\DeDSheets\app\directives\attacksSpellcastingDirective.js" />
+    <Content Include="AppJs\DeDSheets\app\directives\columnDirective.js" />
     <Content Include="AppJs\DeDSheets\app\directives\equipmentDirective.js" />
     <Content Include="AppJs\DeDSheets\app\directives\otherProfixDirective.js" />
     <Content Include="AppJs\DeDSheets\app\directives\sheetsDirective.js" />
@@ -135,6 +136,8 @@
     <Content Include="AppJs\DeDSheets\app\directives\traitsDirective.js" />
     <Content Include="AppJs\DeDSheets\app\modules.js" />
     <Content Include="AppJs\DeDSheets\app\run.js" />
+    <Content Include="AppJs\DeDSheets\app\services\statsService.js" />
+    <Content Include="AppJs\DeDSheets\app\views\directives\columnDirective.html" />
     <Content Include="AppJs\DeDSheets\app\views\directives\equipmentDirective.html" />
     <Content Include="AppJs\DeDSheets\app\views\directives\otherProfixDirective.html" />
     <Content Include="AppJs\DeDSheets\app\views\directives\sheetsDirective.html" />
@@ -146,6 +149,12 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\dedSheets\dedSheets.css">
+      <DependentUpon>dedSheets.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\dedSheets\dedSheets.min.css">
+      <DependentUpon>dedSheets.css</DependentUpon>
+    </Content>
     <Content Include="Content\jasmine\jasmine.css" />
     <Content Include="Content\jasmine\jasmine_favicon.png" />
     <Content Include="favicon.ico" />
@@ -174,6 +183,9 @@
       <DependentUpon>dedSheets.min.js</DependentUpon>
     </Content>
     <Content Include="Content\dedSheets\dedSheets.scss" />
+    <Content Include="Content\dedSheets\dedSheets.css.map">
+      <DependentUpon>dedSheets.css</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-2.1.1.intellisense.js" />
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\bootstrap.js" />
