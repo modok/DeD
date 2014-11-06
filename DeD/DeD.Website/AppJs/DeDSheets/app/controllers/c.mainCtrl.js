@@ -46,9 +46,34 @@
 				hd: '8',
 				tempHp: 0
 			},
-			attacks: [],
 			spells: [],
-			equipment: [],
+			equipment: [
+			{
+				type: 'item',
+				name: 'candles',
+				qty: 20
+			},
+			{
+				type: 'weapon',
+				name: 'Rapier',
+				qty: 1
+			},
+			{
+				type: 'weapon',
+				name: 'Short bow',
+				qty: 1
+			},
+			{
+				type: 'weapon',
+				name: 'dagger',
+				qty: 2
+			},
+			{
+				type: 'ammo',
+				name: 'arrows',
+				qty: 40
+			}
+			],
 			traits: []
 		};
 	}

@@ -1,9 +1,17 @@
 ﻿.sheets {
+    h3 {
+        margin-top:0;
+        font-size:20px;
+    }
     header {
-        min-height: 100px;
         margin: 10px 0;
-        padding:0;
+        padding:10px;
         background: #efefef;
+    }
+
+    .header-information {
+        padding:10px;
+        background:#ddd;
     }
 
     .column {
@@ -17,6 +25,35 @@
             margin:6px;
             padding:20px 0;
             min-height: 100px;
+        }
+    }
+
+    .attacks-spellcasting {
+        .info {
+            margin-top:20px;
+        }
+    }
+
+    .status-health {
+        .info {
+            margin-bottom:10px;
+        }
+
+        .ded-label {
+            font-size:12px;
+        }
+        .ded-value {
+            font-size:24px;
+
+        }
+
+        .max-hit-points {
+            border-bottom:1px solid #333;
+        }
+        .hit-points {
+            background:#ddd;
+            padding:10px 0;
+            margin:0 12px;
         }
     }
 }

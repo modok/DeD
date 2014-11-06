@@ -5,33 +5,37 @@
 <div class="DeD row" data-ng-app="DeDSheets" data-ng-controller="mainCtrl">
 	<sheets char-class="char.charClass"
 					char-name="char.charName"
-	        level="char.level"
-	        race="char.race"
-	        player-name="char.playerName"
-	        experience="char.experience">
-			<column>
-				<statistics-and-profix stats="char.stats"
-															 profix="char.profix"></statistics-and-profix>
+					level="char.level"
+					race="char.race"
+					player-name="char.playerName"
+					experience="char.experience">
+		<column>
+			<statistics-and-profix stats="char.stats"
+														 profix="char.profix"></statistics-and-profix>
 
-				<other-profix profix="char.otherProfix"></other-profix>
+			<other-profix profix="char.otherProfix"></other-profix>
 
-			</column>
-			<column>
-				<status-health armor-class="char.status.ac"
-											 initiative="char.status.init"
-											 speed="char.status.speed"
-											 current-hp="char.status.currentHp"
-											 max-hp="char.status.maxHp"
-											 temp-hp="char.status.tempHp"></status-health>
+		</column>
+		<column>
+			<status-health armor-class="char.status.ac"
+										 initiative="char.status.init"
+										 speed="char.status.speed"
+										 current-hp="char.status.currentHp"
+										 max-hp="char.status.maxHp"
+										 temp-hp="char.status.tempHp"></status-health>
 
-				<attacks-spellcasting attacks="char.attacks"
-															spells="char.spells"></attacks-spellcasting>
+			<hr />
 
-				<equipment objects="char.equipment"></equipment>
-			</column>
+			<attacks-spellcasting equipment="char.equipment"
+														spells="char.spells"></attacks-spellcasting>
 
-			<column>
-				<traits traits="char.traits"></traits>
-			</column>
+			<hr />
+
+			<equipment objects="char.equipment"></equipment>
+		</column>
+
+		<column>
+			<traits traits="char.traits"></traits>
+		</column>
 	</sheets>
 </div>

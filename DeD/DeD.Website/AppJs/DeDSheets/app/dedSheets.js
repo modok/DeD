@@ -51,26 +51,55 @@ angular.module('DeDSheets.controllers')
 				hd: '8',
 				tempHp: 0
 			},
-			attacks: [],
 			spells: [],
-			equipment: [],
+			equipment: [
+			{
+				type: 'item',
+				name: 'candles',
+				qty: 20
+			},
+			{
+				type: 'weapon',
+				name: 'Rapier',
+				qty: 1
+			},
+			{
+				type: 'weapon',
+				name: 'Short bow',
+				qty: 1
+			},
+			{
+				type: 'weapon',
+				name: 'dagger',
+				qty: 2
+			},
+			{
+				type: 'ammo',
+				name: 'arrows',
+				qty: 40
+			}
+			],
 			traits: []
 		};
 	}
 ]);
 ///#source 1 1 /AppJs/DeDSheets/app/directives/attacksSpellcastingDirective.js
 angular.module('DeDSheets.directives')
-.directive('attacksSpellcasting', [function () {
+.directive('attacksSpellcasting', ['equipmentService'
+	, function (equipmentService) {
 	return {
 		restrict: 'E',
 		replace: true,
 		scope: {
-			attacks: '=',
+			equipment: '=',
 			spells: '='
 		},
 		templateUrl: '/AppJs/DeDSheets/app/views/directives/attacksSpellcastingDirective.html',
-		link: function (scope) { }
-
+		link: function(scope) {
+			scope.getWeaponInfoByName = function(name) {
+				return equipmentService.getWeaponInfoByName(name);
+			}
+		}
 	}
 }]);
 ///#source 1 1 /AppJs/DeDSheets/app/directives/columnDirective.js
@@ -100,7 +129,8 @@ angular.module('DeDSheets.directives')
 }]);
 ///#source 1 1 /AppJs/DeDSheets/app/directives/equipmentDirective.js
 angular.module('DeDSheets.directives')
-.directive('equipment', [function () {
+.directive('equipment', ['equipmentService'
+	, function (equipmentService) {
 	return {
 		restrict: 'E',
 		replace: true,
@@ -108,7 +138,9 @@ angular.module('DeDSheets.directives')
 			objects:'='
 		},
 		templateUrl: '/AppJs/DeDSheets/app/views/directives/equipmentDirective.html',
-		link: function (scope) { }
+		link: function(scope) {
+			
+		}
 
 	}
 }]);
@@ -238,6 +270,37 @@ angular.module('DeDSheets.services')
 			this.bonusByValue = function (value) {
 				return values[value];
 			};
+		};
+	}]);
+///#source 1 1 /AppJs/DeDSheets/app/services/equipmentService.js
+angular.module('DeDSheets.services')
+	.factory('equipmentService', [function () {
+		return new function equipmentService() {
+
+			var weapons = {
+				"rapier": {
+					atkBonus: 3,
+					damage: "1d8",
+					damageBonus: 3,
+					range: 'melee'
+				},
+				"short bow": {
+					atkBonus: 3,
+					damage: "1d6",
+					damageBonus: 3,
+					range: 'range 80/320'
+				},
+				"dagger": {
+					atkBonus: 3,
+					damage: "1d4",
+					damageBonus: 3,
+					range: 'range 20/60'
+				}
+			};
+
+			this.getWeaponInfoByName = function(name) {
+				return weapons[name.toLowerCase()];
+			}
 		};
 	}]);
 ///#source 1 1 /AppJs/DeDSheets/app/run.js

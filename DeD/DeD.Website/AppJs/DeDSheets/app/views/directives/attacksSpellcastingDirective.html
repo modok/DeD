@@ -1,3 +1,22 @@
 ﻿<div class="attacks-spellcasting">
-	
+	<h3 class="clearfix"><span class="col-md-12">Attacks and spellcasting</span></h3>
+
+	<table>
+		<tr>
+			<th class="col-md-4">Name</th>
+			<th class="col-md-4">Atk bonus</th>
+			<th class="col-md-4">Damage/type</th>
+		</tr>
+		<tr data-ng-repeat="item in equipment | filter : {type:'weapon'}">
+			<td class="col-md-4">{{item.name}}</td>
+			<td class="col-md-4">{{getWeaponInfoByName(item.name).atkBonus}}</td>
+			<td class="col-md-4">{{getWeaponInfoByName(item.name).damage}}+{{getWeaponInfoByName(item.name).damageBonus}}</td>
+		</tr>
+	</table>
+
+	<div class="clearfix info">
+		<div data-ng-repeat="item in equipment | filter: {type:'weapon'}" class="col-md-12">
+			{{item.name}}: {{getWeaponInfoByName(item.name).range}}
+		</div>
+	</div>
 </div>

@@ -1,1 +1,27 @@
-﻿<div class="status-health"></div>
+﻿<div class="status-health clearfix">
+	<h3 class="clearfix"><span class="col-md-12">Status & Health</span></h3>
+	<div class="clearfix info">
+		<div class="col-md-4 text-center">
+			<div class="ded-value">{{armorClass}}</div>
+			<div class="ded-label">armor class</div>
+		</div>
+		<div class="col-md-4 text-center">
+			<div class="ded-value">{{initiative}}</div>
+			<div class="ded-label">initiative</div>
+		</div>
+		<div class="col-md-4 text-center">
+			<div class="ded-value">{{speed}}</div>
+			<div class="ded-label">speed</div>
+		</div>
+	</div>
+	<div class="clearfix hit-points">
+		<div class="col-md-12">
+			<div class="max-hit-points">Hit point maximum: {{maxHp}}</div>
+			<div class="current-hit-points text-center">
+				<div class="ded-value">{{currentHp}}</div>
+				<div class="ded-label">current hit points</div>
+			</div>
+		</div>
+	</div>
+
+</div>

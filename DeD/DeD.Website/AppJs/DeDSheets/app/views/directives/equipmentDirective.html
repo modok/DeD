@@ -1,3 +1,8 @@
-﻿<div class="equipment">
-	
+﻿<div class="equipment clearfix">
+	<h3 class="clearfix"><span class="col-md-12">Equipment</span></h3>
+	<ul class="list-unstyled col-md-12">
+		<li data-ng-repeat="item in objects track by $index">
+			{{item.qty}} {{item.name}}
+		</li>
+	</ul>
 </div>

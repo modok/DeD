@@ -1,11 +1,17 @@
 ﻿<div class="sheets">
 	<header class="col-md-12">
-		<div>Class: {{charClass}}</div>
-		<div>Name: {{charName}}</div>
-		<div>Level: {{level}}</div>
-		<div>Race: {{race}}</div>
-		<div>Player: {{playerName}}</div>
-		<div>Experience: {{experience}}</div>
+		<div class="header-information">
+			<div class="clearfix">
+				<div class="col-md-4">Name: {{charName}}</div>
+				<div class="col-md-4">Class: {{charClass}}</div>
+				<div class="col-md-4">Level: {{level}}</div>
+			</div>
+			<div class="clearfix">
+				<div class="col-md-4">Race: {{race}}</div>
+				<div class="col-md-4">Experience: {{experience}}</div>
+				<div class="col-md-4">Player: {{playerName}}</div>
+			</div>
+		</div>
 	</header>
 	<section data-ng-transclude>
 		

@@ -1,14 +1,18 @@
 ﻿angular.module('DeDSheets.directives')
-.directive('attacksSpellcasting', [function () {
+.directive('attacksSpellcasting', ['equipmentService'
+	, function (equipmentService) {
 	return {
 		restrict: 'E',
 		replace: true,
 		scope: {
-			attacks: '=',
+			equipment: '=',
 			spells: '='
 		},
 		templateUrl: '/AppJs/DeDSheets/app/views/directives/attacksSpellcastingDirective.html',
-		link: function (scope) { }
-
+		link: function(scope) {
+			scope.getWeaponInfoByName = function(name) {
+				return equipmentService.getWeaponInfoByName(name);
+			}
+		}
 	}
 }]);

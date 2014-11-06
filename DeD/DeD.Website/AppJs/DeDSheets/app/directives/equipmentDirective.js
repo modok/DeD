@@ -1,5 +1,6 @@
 ﻿angular.module('DeDSheets.directives')
-.directive('equipment', [function () {
+.directive('equipment', ['equipmentService'
+	, function (equipmentService) {
 	return {
 		restrict: 'E',
 		replace: true,
@@ -7,7 +8,9 @@
 			objects:'='
 		},
 		templateUrl: '/AppJs/DeDSheets/app/views/directives/equipmentDirective.html',
-		link: function (scope) { }
+		link: function(scope) {
+			
+		}
 
 	}
 }]);

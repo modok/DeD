@@ -136,6 +136,7 @@
     <Content Include="AppJs\DeDSheets\app\directives\traitsDirective.js" />
     <Content Include="AppJs\DeDSheets\app\modules.js" />
     <Content Include="AppJs\DeDSheets\app\run.js" />
+    <Content Include="AppJs\DeDSheets\app\services\equipmentService.js" />
     <Content Include="AppJs\DeDSheets\app\services\statsService.js" />
     <Content Include="AppJs\DeDSheets\app\views\directives\columnDirective.html" />
     <Content Include="AppJs\DeDSheets\app\views\directives\equipmentDirective.html" />
