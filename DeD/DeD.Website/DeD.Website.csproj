@@ -169,6 +169,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\angular-resource.js" />
     <Content Include="Scripts\angular-resource.min.js" />
     <Content Include="Scripts\angular-sanitize.js" />
@@ -178,9 +179,6 @@
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\angular.min.js.map" />
-    <Content Include="Scripts\angular-sanitize.min.js.map" />
-    <Content Include="Scripts\angular-resource.min.js.map" />
-    <Content Include="Scripts\angular-touch.min.js.map" />
     <Content Include="AppJs\DeDSheets\app\dedSheets.js.bundle" />
     <Content Include="AppJs\DeDSheets\app\dedSheets.min.js.map">
       <DependentUpon>dedSheets.min.js</DependentUpon>
@@ -189,8 +187,10 @@
     <Content Include="Content\dedSheets\dedSheets.css.map">
       <DependentUpon>dedSheets.css</DependentUpon>
     </Content>
+    <Content Include="Scripts\angular-resource.min.js.map" />
+    <Content Include="Scripts\angular-sanitize.min.js.map" />
+    <Content Include="Scripts\angular-touch.min.js.map" />
     <None Include="Scripts\jquery-2.1.1.intellisense.js" />
-    <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-dj.js" />
@@ -344,8 +344,6 @@
     <Content Include="Scripts\i18n\angular-locale_en-cx.js" />
     <Content Include="Scripts\i18n\angular-locale_en-dg.js" />
     <Content Include="Scripts\i18n\angular-locale_en-dm.js" />
-    <Content Include="Scripts\i18n\angular-locale_en-dsrt-us.js" />
-    <Content Include="Scripts\i18n\angular-locale_en-dsrt.js" />
     <Content Include="Scripts\i18n\angular-locale_en-er.js" />
     <Content Include="Scripts\i18n\angular-locale_en-fj.js" />
     <Content Include="Scripts\i18n\angular-locale_en-fk.js" />
@@ -667,12 +665,10 @@
     <Content Include="Scripts\i18n\angular-locale_mn.js" />
     <Content Include="Scripts\i18n\angular-locale_mr-in.js" />
     <Content Include="Scripts\i18n\angular-locale_mr.js" />
-    <Content Include="Scripts\i18n\angular-locale_ms-bn.js" />
     <Content Include="Scripts\i18n\angular-locale_ms-latn-bn.js" />
     <Content Include="Scripts\i18n\angular-locale_ms-latn-my.js" />
     <Content Include="Scripts\i18n\angular-locale_ms-latn-sg.js" />
     <Content Include="Scripts\i18n\angular-locale_ms-latn.js" />
-    <Content Include="Scripts\i18n\angular-locale_ms-my.js" />
     <Content Include="Scripts\i18n\angular-locale_ms.js" />
     <Content Include="Scripts\i18n\angular-locale_mt-mt.js" />
     <Content Include="Scripts\i18n\angular-locale_mt.js" />
